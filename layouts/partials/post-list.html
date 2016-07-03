@@ -1,0 +1,21 @@
+<ul id="post-list">
+    {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+    {{ $url := replace .Permalink .Site.BaseURL "" }}
+        {{ if ne $url "about/" }}
+            <li>
+              <a href='{{ .Permalink }}'>
+                <h1 class="list__title">{{ .Title }}</h1>
+                <img class="list__image" src="{{ $.Site.BaseURL }}images/post/{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
+                <!-- <aside class="dates">{{ .Date.Format "Jan 2" }}</aside> -->
+                <section id="sharing">
+                    {{ partial "share.html" . }}
+                </section>
+                {{ range .Params.tags }}
+                  <a href="{{ $.Site.BaseURL }}tags/{{ . }}" class="list__tag">#{{ . }}</a>
+                {{ end }}
+                {{ partial "profile-small-petar.html" }}
+              </a>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>

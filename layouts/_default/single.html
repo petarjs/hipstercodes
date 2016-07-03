@@ -1,0 +1,45 @@
+    {{ partial "head.html" . }}
+    <body>
+       {{ partial "nav.html" . }}
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                  <a href='{{ .Site.BaseURL }}'>
+                    <img  class="header__logo" src="{{ .Site.BaseURL }}images/logo.png"/>
+                  </a>
+                  <h1 class="title">{{ .Title }}</h1>
+                  <h2 class="headline">
+                  {{ .Date.Format "January 2, 2006" }} 
+                  <br><br>
+                  <section id="sharing">
+                      {{ partial "share.html" . }}
+                  </section>
+                  <br><br><br>
+                  {{ with .Params.tags }}
+                  {{ if ge (len .) 1 }}
+                      {{ range . }}
+                          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
+                      {{ end }}
+                  {{ end }}
+                  {{ end}}
+                  </h2>
+                </header>
+                <section id="post-body">
+                    {{ .Content }}
+                </section>
+            </article>
+
+            <section class="post__image">
+              <img src="{{ $.Site.BaseURL }}images/post/{{ with .Params.image }}{{ . }}{{ end }}" alt="{{ .Title }}">
+            </section>
+
+            {{ template "_internal/disqus.html" . }}
+
+            {{ partial "latest-posts.html" . }}
+            {{ partial "footer.html" . }}
+        </section>
+
+        {{ partial "js.html" . }}
+    </body>
+</html>

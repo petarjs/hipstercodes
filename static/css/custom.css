@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile #wrapper {
+  padding: 60px 40px 0px;
+}
+
+.profile #header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__nav {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  margin: 30px 0;
+}
+
+.header__nav li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #aaa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+.header__nav a {
+  color: #aaa;
+}
+
+.header__nav a:hover {
+  color: #666;
+}
+
+.header__nav li:after {
+  content: ' - '
+}
+.header__nav li:last-child:after {
+  content: '';
+}
+
+#post-list, #archive-list {
+  margin-top: 0;
+}
+
+.post h2.headline {
+  text-transform: none;
+}
+
+.post {
+  margin: 0px 0 0 0;
+}
+
+.post .title {
+  margin-top: 40px;
+}
+
+#post-list li+li {
+  padding-top: 40px;
+}
+
+.post__image {
+  margin-bottom: 60px;
+}
+
+#disqus_thread {
+  margin-bottom: 60px;
+}
+
+.about h3 {
+  line-height: 1.8;
+}
+
+.about .petar-w-glasses {
+  width: 200px;
+  vertical-align: middle;
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  .about .petar-w-glasses {
+    float: none;
+  }
+}
+
+.profile--small .profile__img {
+  width: 36px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.profile--small .profile__author {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#post-list a {
+  line-height: 1.4;
+}
+
+.home .list__title {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.list__image {
+  margin-bottom: 10px;
+}
+
+#post-list .list__tag {
+  float: right;
+  font-weight: 500;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 9px 0;
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1;
+}

@@ -1,0 +1,31 @@
+# Site settings
+baseurl = "http://hipstercodes.com/"
+languageCode = "en-us"
+title = "Hipster Codes"
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-80204289-1"
+# Disable comments by leaving disqusShortname empty
+disqusShortname = "hipstercodes"
+
+[params]
+  name = "HipsterCodes"
+  description = "A curration of collection of hipster posters of code quotes for border developers."
+  bio = "Blogger - Programmer - Gopher"
+  # Enter optionally your twitter account
+  twitter = "Your Twitter account"
+  enableRSS = true
+
+  # Add custom assets with their paths relative to the static folder
+  customCSS = ["css/custom.css"]
+  customJS  = []
+
+  aboutAuthor = ""
+
+  # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+  iconFont = "mono-social"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = "circle"
+
+# Add additional social link entries underneath
+[social]
