@@ -10,7 +10,7 @@ disqusShortname = "hipstercodes"
 
 [params]
   name = "HipsterCodes"
-  description = "A curration of collection of hipster posters of code quotes for border developers."
+  description = "A curration of collection of hipster posters of code quotes for bored developers."
   bio = "Blogger - Programmer - Gopher"
   # Enter optionally your twitter account
   twitter = "Your Twitter account"
