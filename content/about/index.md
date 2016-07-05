@@ -16,14 +16,6 @@ Well, that's it. I told you it's simple.
 
 ***
 
-### Want us to publish your posts here?
-
-Send your posters to `submit@hipstercodes.com`.
-
-We'll do our secret quality control procedure on your poster, and will get back to you, usually within 2 minutes to an hour.
-
-***
-
 <a href="http://petarslovic.com"><img class="petar-w-glasses" src="/images/petar-w-glasses.png" alt=""></a>
 ### Who's behind this?
 
