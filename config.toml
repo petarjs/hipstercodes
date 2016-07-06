@@ -29,3 +29,5 @@ disqusShortname = "hipstercodes"
 
 # Add additional social link entries underneath
 [social]
+  twitter  = "https://twitter.com/hipstercodes"
+  facebook = "https://www.facebook.com/hipstercodes"
